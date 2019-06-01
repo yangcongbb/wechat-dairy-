@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "我的日记",
+    "navigationBarTextStyle": "white",
+    "pageOrientation": "auto"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "今日",
+        "iconPath": "images/jinri.png",
+        "selectedIconPath": "images/jinri_selected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "往日",
+        "iconPath": "images/wangri.png",
+        "selectedIconPath": "images/wangri_selected.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap31.json"
+}
