@@ -1,3 +1,4 @@
+![ad](https://github.com/yangcongbb/wechat-dairy-/blob/-/gh_f4e8ac4ab63c_344.jpg)
 # 
 微信小程序-日记卡片
 ## 关于
