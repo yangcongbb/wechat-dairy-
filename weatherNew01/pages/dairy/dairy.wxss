@@ -1,0 +1,76 @@
+.top {
+  display: flex;
+  position: absolute;
+  margin-top: 140rpx;
+}
+
+.address {
+  margin-left:30rpx;
+  margin-right: 500rpx;
+  color:#D2691E;
+}
+
+.whetherinfo {
+  margin-right:30rpx;
+  color:#D2691E;
+}
+
+.date{
+  margin-top: 75rpx;
+  position: absolute;
+  color: red;
+  width: 55%;
+  margin-left: 100rpx;
+}
+
+.whetherbackground{
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  position: absolute;
+  
+}
+
+
+.container {
+  height: 150rpx;
+}
+
+.textarea{
+  width:95%;
+  height: 50%;
+  margin-top: 210rpx;
+  position: absolute;
+  flex-direction:column;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.save{
+  background-color: transparent;
+  top: 0;
+  margin-left: 300rpx;
+  margin-top: 100rpx;
+  width: 20%;
+  position: fiexd;
+}
+
+.save::after{
+  border: none;
+}
+
+.back{
+  position: absolute;
+  background-color: transparent;
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 75rpx;
+  margin-left: 30rpx;
+}
+
+.selectedpic{
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  position: absolute;
+}

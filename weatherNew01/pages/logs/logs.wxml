@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<image class='backgroundpic' src='/images/history.jpg'></image>
+<view class='dairy-list'>
+<scroll-view scroll-y style="height: 480px;" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<navigator class='dairy' wx:for="{{histories}}" wx:key="{{item.date}}" url="/pages/dairy/dairy?date={{item.date}}&info={{item.info}}&value={{item.value}}&address={{item.address}}&index={{item.index}}&tempFilePaths={{item.tempFilePaths}}&tempVideoPaths={{item.tempVideoPaths}}&color={{item.color}}">{{item.date}}{{item.address}}{{item.info}}</navigator>
+</scroll-view>
+</view>
+
+
+<button class='del' bindtap="handleClick">清空全部日记</button>
+<button class='keyword' bindtap='keyword'>我的关键字</button>
+<text class='showKeyWord'>{{num}}</text>
+<text class='showKeyNum'>{{max}}</text>

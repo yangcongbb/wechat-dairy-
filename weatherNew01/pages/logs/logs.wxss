@@ -1,0 +1,82 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  z-index: 1;
+}
+.log-item {
+  margin: 10rpx;
+  z-index: 1;
+}
+
+.dairy-list{
+  margin-top: 160rpx;
+  width: 100%;
+  word-break:break-all;
+  position: absolute;
+  margin-left: 23%;
+  margin-right: 37%;
+}
+
+.dairy{
+  margin-bottom: 30rpx;
+  width: 53%;
+  background-color: rgba(0,0,0,0.6);
+  color: red;
+}
+
+.backgroundpic{
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  position: absolute;
+}
+
+.del{
+  position: absolute;
+  background-color:  rgba(0, 0, 0, 0.568);
+  word-break:break-all;
+  color: yellow;
+  width: 18%;
+  height: auto;
+  border: 2rpx black solid;
+  margin-top: 55%;
+}
+
+.keyword{
+  
+  background-color:  rgba(0, 0, 0, 0.568);
+  word-break:break-all;
+  color: yellow;
+  width: 18%;
+  height: auto;
+  border: 2rpx black solid;
+  margin-top: 55%;
+  float: right;
+}
+
+.showKeyWord{
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 40%;
+  font-size: 130rpx;
+  color: blue;
+  animation: showkeyword 2s  0s 1;
+}
+
+@keyframes showkeyword{
+  form{
+      font-size: 1rpx;
+  }
+  to{
+      font-size: 450rpx;
+  }
+}
+
+.showKeyNum{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 3%;
+  font-size: 30rpx;
+  color: blue;
+}

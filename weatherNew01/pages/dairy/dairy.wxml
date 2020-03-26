@@ -1,0 +1,21 @@
+<!--pages/dairy/dairy.wxml-->
+<image class = "whetherbackground" wx:if="{{info === '晴'}}" src='/images/daysun.jpg'></image>
+<image class = "whetherbackground" wx:if="{{info === '阴'||info==='多云'}}" src='/images/daycloud.jpg'></image>
+<image class = "whetherbackground" wx:if="{{info === '阵雨'||info==='小雨'||info==='中雨'||info==='大雨'||info==='暴雨'||info==='大暴雨'||info==='特大暴雨'||info==='冻雨'||info==='小到中雨'||info==='中到大雨'||info==='大到暴雨'||info==='暴雨到大暴雨'||info==='大暴雨到特大暴雨'}}" src='/images/dayrain.jpg'></image>
+<image class = "whetherbackground" wx:if="{{info === '雨夹雪'||info==='阵雪'||info==='小雪'||info==='中雪'||info===''||info==='大雪'||info==='小到中雪'||info==='中到大雪'||info==='大到暴雪'}}" src='/images/daysnow.jpg'></image>
+<image class = "whetherbackground" wx:if="{{info === '浮尘'||info==='扬沙'||info==='强沙尘暴'||info==='霾'}}" src='/images/daysmog.jpg'></image>
+<image class = "whetherbackground" wx:if="{{info === '雷阵雨伴有冰雹'||info==='雷阵雨'||info==='强沙尘暴'||info==='霾'}}" src='/images/daythunder.jpg'></image>
+
+<image class='selectedpic' src='{{tempFilePaths}}' wx:if="{{tempFilePaths}}">true</image>
+<video class='selectedpic' src='{{tempVideoPaths}}' autoplay='true'  wx:if="{{tempVideoPaths}}">true</video>
+
+<view class='top'>
+  <view style='color:{{color}}' class='address'>{{address}}</view>  
+  <view style='color:{{color}}' class='whetherinfo'>{{info}}</view>
+</view>
+<view style='color:{{color}}' class='date'>{{date}}</view>
+<textarea style='color:{{color}}' class='textarea' maxlength="-1" maxheight="50" auto-height="true" value="{{value}}"/>
+<navigator bindtap="bindViewTap" url='../logs/logs'>
+<image class='back' src='/images/back.png'></image>
+</navigator>
+
